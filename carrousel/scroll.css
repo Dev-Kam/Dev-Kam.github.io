@@ -1,0 +1,24 @@
+.content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.carrousel{
+	display: flex;
+	
+	max-width: 500px;
+	height: 300px;
+	width: 100%;
+	overflow-x: scroll;
+
+	scroll-snap-type: x mandatory;
+
+}
+.carrousel img{
+	width: 100%;
+	object-fit: cover;
+
+	scroll-snap-align: center;
+}
