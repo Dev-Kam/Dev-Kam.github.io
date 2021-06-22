@@ -14,11 +14,11 @@
 	overflow-x: scroll;
 
 	scroll-snap-type: x mandatory;
-
 }
 .carrousel img{
 	width: 100%;
 	object-fit: cover;
 
 	scroll-snap-align: center;
+	scroll-snap-align: -moz-center;
 }

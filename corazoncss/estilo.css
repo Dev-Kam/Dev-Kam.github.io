@@ -1,0 +1,78 @@
+.background{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fdfdfd;
+}
+.heart{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #111419;
+	height: 50px;
+	width: 50px;
+	transform: rotate(-45deg);
+	animation: latir .8s infinite;
+}
+
+.heart:after{
+	content: "";
+	background-color: #111419;
+	border-radius: 50%;
+	position: absolute;
+	width: 50px;
+    top: 0px;
+    left: 25px;
+    height: 50px;
+}
+
+.heart:before{
+	content: "";
+    background-color: #111419;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+}
+
+@keyframes latir{
+	0%{
+		transform: scale(2) rotate(-45deg);
+	}
+
+	50%{
+		transform: scale(1.4) rotate(-45deg);
+	}
+}
+
+
+.spinner{
+
+
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border-left-color: #333;
+	animation: hola 1s linear infinite;
+}   
+
+@keyframes hola{
+    0%{
+    	transform: rotate(0deg);
+
+    }
+
+    100%{
+    	transform: rotate(360deg);
+    }
+}
