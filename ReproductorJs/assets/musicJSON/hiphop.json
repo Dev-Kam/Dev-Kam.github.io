@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "playlist":"HipHop",
+        "artista":"50 Cent",
+        "nombre" : "In Da Club",
+        "url":"assets/music/hip-hop/1.mp3",
+        "duracion":200
+    },
+    {
+        "id":2,
+        "playlist":"HipHop",
+        "artista":"Nelly",
+        "nombre" : "Dilemma",
+        "url":"assets/music/hip-hop/2.mp3",
+        "duracion":448
+    },
+    {
+        "id":3,
+        "playlist":"HipHop",
+        "artista":"Eminem",
+        "nombre" : "Lose Yourself",
+        "url":"assets/music/hip-hop/3.mp3",
+        "duracion":211
+    },
+    {
+        "id":4,
+        "playlist":"HipHop",
+        "artista":"Eminem",
+        "nombre" : "Without Me",
+        "url":"assets/music/hip-hop/4.mp3",
+        "duracion":448
+    },
+    {
+        "id":5,
+        "playlist":"HipHop",
+        "artista":"Sean Paul",
+        "nombre" : "Like Glue",
+        "url":"assets/music/hip-hop/5.mp3",
+        "duracion":448
+    }
+
+
+]

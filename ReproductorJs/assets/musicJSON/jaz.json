@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "playlist":"estudiar",
+        "artista":"Mozart",
+        "nombre" : "Lacrimosa",
+        "url":"assets/music/sin-copy/chill-uno.mp3",
+        "duracion":200
+    },
+    {
+        "id":2,
+        "playlist":"estudiar",
+        "artista":"Mozart",
+        "nombre" : "Symphony-40",
+        "url":"assets/music/sin-copy/chill-dos.mp3",
+        "duracion":448
+    },
+    {
+        "id":3,
+        "playlist":"estudiar",
+        "artista":"Mozart",
+        "nombre" : "RondoAllaTurca",
+        "url":"assets/music/sin-copy/chill-tres.mp3",
+        "duracion":211
+    },
+    {
+        "id":1,
+        "playlist":"estudiar",
+        "artista":"Mozart",
+        "nombre" : "Lacrimosa",
+        "url":"assets/music/sin-copy/chill-uno.mp3",
+        "duracion":200
+    },
+    {
+        "id":2,
+        "playlist":"estudiar",
+        "artista":"Mozart",
+        "nombre" : "Symphony-40",
+        "url":"assets/music/sin-copy/chill-dos.mp3",
+        "duracion":448
+    },
+    {
+        "id":3,
+        "playlist":"estudiar",
+        "artista":"Mozart",
+        "nombre" : "RondoAllaTurca",
+        "url":"assets/music/sin-copy/chill-tres.mp3",
+        "duracion":211
+    }
+
+
+]
