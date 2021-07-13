@@ -14,7 +14,7 @@ a{
 .section{
 	width: 100%;
     height: 100vh;
-    background-color: #222222;
+    background-color: #111419;;
     position: relative;
 }
 .text{
@@ -33,7 +33,7 @@ a{
 	font-size: 2.5rem;
 	width: 100%;
 	text-align: center;
-	color: #F5A623;
+	color: #f8d70c;
 	line-height: 50px;
 }
 .text p{
@@ -52,7 +52,7 @@ a{
 	align-items: center;
 	color: #222;
 	font-weight: 600;
-	background-color: #F5A623;
+	background-color: #f8d70c;
 	margin-top: 10px;
 	box-sizing: 2px 2px 30px rgba(0,0,0,.7);
 }
