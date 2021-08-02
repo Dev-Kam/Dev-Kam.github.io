@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="estilo.css">
 	<!-- Fontawesome CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-	<title>Mi Portfolio Personal</title>
+	<title>Testing Two</title>
 </head>
 <body>
 	<div class="container">
@@ -20,6 +20,7 @@
 				<li><a href="#testimonials" onclick="toggleMenu();">Testimonial</a></li>
 				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 			</ul>
+			<div class="themeSwitch"></div>
 		</div>
 		<div class="main">
 			<div class="topbar">
@@ -33,11 +34,11 @@
 			<section class="banner" id="banner">
 				<div class="content">
 					<div class="imgBx">
-						<img src="img/perfil.png" alt="">
+						<img src="img/perfilgrande.png" alt="">
 					</div>
 					<h3>Camilo Rigoni</h3>
-					<p>Soy Diseñador Web Front End.</p>
-					<a href="cv/index.html" class="btn">Descarga mi CV</a>
+					<p>Developer Front End</p>
+					<a href="cv/index.html" class="btn">View CV</a>
 					<ul class="socialMedia">
 						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -204,14 +205,7 @@
             		</div>
             		<div class="testimonialsBox">
             			<div class="imgBx">
-            				<img src="img/user1.jpg" alt="">
-            			</div>
-            			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. At harum repellat aliquid nulla sint architecto tempora vel inventore explicabo sed!</p>
-            			<h4>Someone Famouse<br><span>Website Designer</span></h4>
-            		</div>
-            		<div class="testimonialsBox">
-            			<div class="imgBx">
-            				<img src="img/user2 .jpg" alt="">
+            				<img src="img/user2.jpg" alt="">
             			</div>
             			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. At harum repellat aliquid nulla sint architecto tempora vel inventore explicabo sed!</p>
             			<h4>Someone Famouse<br><span>Website Designer</span></h4>
@@ -223,6 +217,13 @@
             			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. At harum repellat aliquid nulla sint architecto tempora vel inventore explicabo sed!</p>
             			<h4>Someone Famouse<br><span>Website Designer</span></h4>
             		</div>
+            		<div class="testimonialsBox">
+            			<div class="imgBx">
+            				<img src="img/user.jpg" alt="">
+            			</div>
+            			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. At harum repellat aliquid nulla sint architecto tempora vel inventore explicabo sed!</p>
+            			<h4>Someone Famouse<br><span>Website Designer</span></h4>
+            		</div>
             	</div>
             </section>
             <!-- Testimonials End -->
@@ -230,7 +231,7 @@
             <!-- Contact Start -->
             <section class="contact adjust">
             	<div class="title" id="contact">
-            		<h2>Let´s Say Hi</h2>
+            		<h2>Contact Me</h2>
             		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sit nostrum ut?</p>
             	</div>
             	<div class="contactForm">
@@ -265,12 +266,19 @@
 		let topbar = document.querySelector('.topbar');
 		let navigation = document.querySelector('.navigation');
 		let main = document.querySelector('.main');
+		let themeSwitch = document.querySelector('.themeSwitch');
+		let body = document.querySelector('body');
 
 		toggle.onclick = function(){
 			toggle.classList.toggle('active');
 			topbar.classList.toggle('active');
 			navigation.classList.toggle('active');
 			main.classList.toggle('active');
+		}
+
+		// theme switch toggle
+		themeSwitch.onclick = function(){
+			body.classList.toggle('dark')
 		}
 
 		function toggleMenu(){

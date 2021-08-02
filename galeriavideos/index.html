@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilo.css">
+	<title>Galeria de Videos</title>
+</head>
+<body>
+	  <div class="container">
+	  	<h1>Galeria de Videos</h1>
+	  	<div class="row">
+	  		<div class="col">
+	  			<div class="feature-img">
+	  				<img src="img/pic1.png" width="100%">
+	  				<img src="img/play.png" class="play-btn" onclick="playVideo('vid/vid1.mp4')">
+	  			</div>
+	  		</div>
+	  		<div class="col">
+	  			<div class="small-img-row">
+	  				<div class="small-img">
+	  					<img src="img/pic2.png" alt="">
+	  					<img src="img/play.png" class="play-btn" onclick="playVideo('vid/vid2.mp4')">
+	  				</div>
+	  				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, consectetur.</p>
+	  			</div>
+	  			<div class="small-img-row">
+	  				<div class="small-img">
+	  					<img src="img/pic3.png" alt="">
+	  					<img src="img/play.png" class="play-btn" onclick="playVideo('vid/vid3.mp4')">
+	  				</div>
+	  				<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Quibusdam.</p>
+	  			</div>
+	  			<div class="small-img-row">
+	  				<div class="small-img">
+	  					<img src="img/pic4.png" alt="">
+	  					<img src="img/play.png" class="play-btn" onclick="playVideo('vid/vid4.mp4')">
+	  				</div>
+	  				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div> 
+
+      <div class="video-player" id="videoPlayer">
+      	<video width="100%" controls autoplay id="myVideo">
+      		<source src="vid/vid1.mp4" type="video/mp4">
+      	</video>
+      	<img src="img/close.png" class="close-btn" onclick="stopVideo()">
+      </div>
+
+<script type="text/javascript">
+	var videoPlayer = document.getElementById("videoPlayer");
+	var myVideo = document.getElementById("myVideo");
+
+	function stopVideo(){
+		videoPlayer.style.display = "none";
+	}
+
+	function playVideo(file){
+		myVideo.src = file;
+		videoPlayer.style.display = "block";
+	}
+
+
+</script>
+
+
+</body>
+</html>

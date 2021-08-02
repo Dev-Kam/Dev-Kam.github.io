@@ -13,6 +13,12 @@
 	--white: #fff;
 	--white2: #fff;
 }
+.dark{
+	--black: #fff;
+	--black2: #444;
+	--white: #333;
+	--white2: #444;
+}
 body{
 	overflow-x: hidden;
 }
@@ -33,6 +39,9 @@ body{
 	align-items: center;
 	overflow: hidden;
 	transition: width .5s, left .5s;
+}
+.dark .navigation{
+	border-right: 1px solid rgba(0, 0, 0, .5);
 }
 .navigation.active{
 	width: 0;
@@ -94,6 +103,9 @@ body{
 	align-items: center;
 	z-index: 10000;
 	transition: width .5s, left .5s;
+}
+.dark .main .topbar{
+	border-bottom: 1px solid rgba(0, 0, 0, .5);
 }
 .main .topbar.active{
 	width: calc(100% - 0px);
@@ -166,6 +178,9 @@ h3{
 p{
 	color: #777;
 }
+.dark p{
+	color: var(--black);
+}
 .btn{
 	position: relative;
 	display: inline-block;
@@ -176,6 +191,9 @@ p{
 	letter-spacing: 1px;
 	margin-top: 10px;
 	text-decoration: none;
+}
+.dark .btn:hover{
+	background: #2196f3;
 }
 
 /* Social Media Start */
@@ -199,6 +217,9 @@ p{
 	text-decoration: none;
 	color: var(--black);
 	font-size: 1.2em;
+}
+.dark .socialMedia li a:hover{
+	background: #2196f3;
 }
 .socialMedia li a:hover{
 	background: var(--black2);
@@ -267,8 +288,14 @@ p{
 	align-items: center;
 	flex-direction: column;
 }
+.dark .services .content .serviceBox:hover{
+	background: #2196f3;
+}
 .services .content .serviceBox img{
 	max-width: 50px;
+}
+.dark .services .content .serviceBox img{
+	filter: invert(1);
 }
 .services .content .serviceBox h2{
 	font-size: 1.1em;
@@ -323,6 +350,9 @@ p{
 	transform: translateY(100%);
 	transition: .5s ease-in-out;
 }
+.dark .project .content .workBx .textBx{
+    background: #444;
+}
 .project .content .workBx:hover .textBx{
 	transform: translateY(0);
 }
@@ -341,6 +371,9 @@ p{
 	border: 1px solid rgba(0, 0, 0, .05);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
 	padding: 20px;
+}
+.dark .testimonials .content .testimonialsBox:hover{
+	background: #2196f3;
 }
 .testimonials .content .testimonialsBox .imgBx{
 	position: relative;
@@ -433,6 +466,9 @@ p{
 	max-width: 150px;
 	border: none;
 }
+.dark .contact .contactForm .row2 input[type="submit"]:hover{
+	background: #2196f3;
+}
 /* Contact Form End */
 
 .copyright{
@@ -441,11 +477,51 @@ p{
 	padding: 10px 40px;
 	text-align: center;
 }
+/* Dark and Light mode */
+.themeSwitch{
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+	width: 30px;
+	height: 30px;
+	background: var(--black);
+	color: var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeSwitch::before{
+	content: '\f186';
+	font-family: fontAwesome;
+}
+.dark .themeSwitch::before{
+	content: '\f185';
+	font-family: fontAwesome;
+}
+.themeSwitch::after{
+	content: 'Switch To Dark Mode';
+	position: absolute;
+	left: 40px;
+	font-size: .7em;
+	color: var(--black);
+	white-space: nowrap;
+	font-weight: 300;
+	letter-spacing: 1px;
+	pointer-events: none;
+}
+.dark .themeSwitch::after{
+   	content: 'Switch To Light Mode';
+}
 
 /* Responsive Design*/
 @media (max-width: 992px){
 	*{
 		scroll-behavior: auto;
+	}
+	.themeSwitch{
+		left: 20px;
 	}
 	.navigation{
 		left: -100%;

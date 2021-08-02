@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grandstander:wght@300&display=swap');
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+a{
+	text-decoration: none;
+}
+
+.navigation{
+	margin: 40px 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo a{
+	font-family: 'Bebas Neue', cursive;
+	color: #ececec;
+	font-size: 30px;
+}
+
+.bar1,
+.bar2,
+.bar3{
+	margin: 5px 0px;
+	background-color: #ffffff;
+	border-right: 20px;
+	height: 3px;
+}
+
+.bar1{
+	width: 10px;
+}
+.bar2{
+	width: 20px;
+}
+.bar3{
+	width: 35px;
+}
+
+.bars{
+	transform: rotate(180deg);
+}
+
+.modal{
+	height: 600px;
+	position: absolute;
+	left: 55%;
+	bottom: 0px;
+	transform: translateX(-55%);
+}
+
+h1,h2{
+	color: #ffffff;
+	font-family: 'Bebas Neue';
+	letter-spacing: 2px;
+	line-height: 0px;
+}
+
+h1{
+	font-size: 130px;
+}
+
+h2{
+	font-size: 80px;
+}
+
+.button-container{
+	position: absolute;
+	right: 12%;
+	text-align: center;
+}
+
+.button{
+	border: 5px solid #23303d;
+	border-radius: 50%;
+	width: 80px;
+	height: 70px;
+	padding: 10px 5px;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button img{
+	height: 30px;
+	margin-left: 5px;
+}
+
+.container{
+	margin: 0px 90px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80vh;
+}
+
+.text-container{
+	position: absolute;
+}
+
+.play{
+	color: #bbb9b9;
+	font-family: myriad pro;
+	font-size: 22px;
+}
+
+.button:hover,
+.button img:hover{
+	background-color: #e02f32;
+	transition: all ease .5s;
+	box-shadow: 2px 2px 12px rgba(255,255,255,0.20);
+}
+
+
+.right{
+	color: #f0f0f0;
+	position: absolute;
+	font-family: myriad pro;
+	top: 50%;
+	transform: translateY(-50%);
+	transform: rotate(90deg);
+}
+
+
+.right{
+	right: -20px;
+}
+
+.social{
+	position: absolute;
+	bottom: 30px;
+	right: 40px;
+}
+
+.social img{
+	height: 17px;
+}
+
+.social a{
+	margin: 0px 10px;
+}
+
+.bottom-left{
+	position: absolute;
+	bottom: 10px;
+	left: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.bottom-left h1{
+	color: #4489e1;
+	margin-right: 5px;
+	font-size: 70px;
+}
+
+.line{
+	width: 130px;
+	height: 4px;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
