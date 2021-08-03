@@ -116,7 +116,7 @@
      		<div class="row">
      			<div class="about-img">
      				<div class="img-box inner-shadow">
-     					<img src="img/perfilgrande2.png" alt="foto-perfil" class="outer-shadow">
+     					<img src="img/perfilgrande.png" alt="foto-perfil" class="outer-shadow">
      				</div>
      				<!-- Social Links Start -->
                     <div class="social-links">
@@ -128,8 +128,8 @@
      				<!-- Social Links End -->
      			</div>
      			<div class="about-info">
-     				<p><span>Hola! Mi nombre es Camilo. Soy Desarrollador Web</span> Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Fugit distinctio praesentium minus quaerat minima cupiditate consequuntur soluta ex incidunt necessitatibus libero quia optio magni laboriosam, quis totam, corrupti quas hic?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nobis consequuntur corrupti temporibus consectetur a vel saepe et cumque! Eius Lorem ipsum dolor sit amet consectetur adipisicing elit. In quod cupiditate nam incidunt asperiores hic molestiae consequatur ratione placeat doloremque?</p>
-     				<a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Descargar CV</a>
+     				<p><span>Hola! Mi nombre es Camilo. Soy Desarrollador Web Front End</span>Me apasiona el desarrollo de software y todo lo que relacionado a él.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nobis consequuntur corrupti temporibus consectetur a vel saepe et cumque! Eius Lorem ipsum dolor sit amet consectetur adipisicing elit. In quod cupiditate nam incidunt asperiores hic molestiae consequatur ratione placeat doloremque?</p>
+     				<a href="cv.pdf" target="_blank" class="btn-1 outer-shadow hover-in-shadow">Ver CV</a>
      				<a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Contratame</a>
      			</div>
      		</div>
@@ -732,7 +732,7 @@
           </div>
           <div class="row">
                <div class="contact-form">
-                    <form action="">
+                    <form action="https://formspree.io/f/xeqvrlgp" method="POST" id="form">
                          <div class="row">
                               <div class="w-50">
                                   <div class="input-group outer-shadow hover-in-shadow">
@@ -814,10 +814,33 @@
      </div>
 </div>
 <!-- Style switcher End -->
+<!-- Form -->
+<script>
+  const $form = document.querySelector('#form')
+
+  $form.addEventListener('submit', handleSubmit)
+
+   async function handleSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    if (response.ok){
+      this.reset()
+      alert('Gracias por  Contactarme, responderé pronto.')
+    }
+  }
+</script>
 
 <!-- main js -->
 <script src="js/main.js"></script>
 <!-- style switcher js -->
 <script src="js/style-switcher.js"></script>
+
 </body>
 </html>
