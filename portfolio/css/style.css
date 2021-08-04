@@ -173,7 +173,7 @@ img{
 .effect-2 div{
 	height: 3px;
 	width: 3px;
-	background-color: #ff9c07;
+	background-color: var(--skin-color); /* #ff9c07 */
 	margin: 0 3px 8px;
 }
 
