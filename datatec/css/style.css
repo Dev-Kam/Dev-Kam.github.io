@@ -359,11 +359,11 @@ img{
 	height: 40px;
 	width: 40px;
 	font-size: 24px;
-	border-radius: 50%;
+
 	color: var(--skin-color);
-	border: 2px solid var(--skin-color);
+	
 	font-weight: 600;
-	text-transform: uppercase;
+	
 }
 
 .header .hamburger-btn{
